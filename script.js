@@ -32,7 +32,7 @@ function displayWeather(data) {
     const iconCode = data.weather[0].icon;
     const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
-	temp.innerText=data.main.temp;
+	temp.innerText=`${data.main.temp} °C `;
 	city.innerText= data.name;
 	weather.innerText=description;
     wind.innerText=`${data.wind.speed} Km/h`;
