@@ -18,7 +18,7 @@ async function getWeather() {
 
 function displayWeather(data) {
 
-	console.log(data);
+	
    
     //main
 	const temp=document.getElementById('temp');
