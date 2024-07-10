@@ -17,7 +17,7 @@ body{
     flex-direction: column;
     align-items: center;
     
-     background: rgba(0, 0, 0, 0.5);
+     background-image: url('rain.png');
      backdrop-filter: blur(10px);
      -webkit-backdrop-filter: blur(10px);
      z-index: 0;
