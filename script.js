@@ -1,3 +1,13 @@
+function detectEnterKey(event) {
+            if (event.key === 'Enter') 
+                event.preventDefault();
+                getWeather(); // Call your function
+            }
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var inputField = document.getElementById('city');
+            inputField.addEventListener('keydown', detectEnterKey);
+        });
 async function getWeather() {
     const city = document.getElementById('city').value;
     const apiKey = '1901f906dbb9a3b92cacb3c8fd2a9002'; // Replace with your OpenWeatherMap API key
