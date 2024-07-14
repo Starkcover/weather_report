@@ -1,5 +1,5 @@
 function detectEnterKey(event) {
-            if (event.key === 'Enter') 
+            if (event.key === 'Enter') {
                 event.preventDefault();
                 getWeather(); // Call your function
             }
